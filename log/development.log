@@ -1,0 +1,339 @@
+
+
+Processing RemoteQueryController#index (for 127.0.0.1 at 2010-06-15 11:27:51) [GET]
+Completed in 99ms (View: 1, DB: 0) | 200 OK [http://localhost/remote_query]
+
+
+Processing RemoteQueryController#index (for 127.0.0.1 at 2010-06-15 11:32:44) [GET]
+Completed in 138ms (View: 1, DB: 0) | 200 OK [http://localhost/remote_query]
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:32:47) [GET]
+Rendering template within layouts/application
+Rendering form/index
+ERROR: compiling _run_haml_app47views47form47index46haml RAISED compile error
+/Users/jason/Documents/OpenSource/amazon_search_example/app/views/form/index.haml:1: syntax error, unexpected tSYMBEG
+...);haml_temp =  form_tag('/'. :method => "post") do;
+                              ^
+/Users/jason/Documents/OpenSource/amazon_search_example/app/views/form/index.haml:1: syntax error, unexpected ')', expecting kEND
+...rm_tag('/'. :method => "post") do;
+                              ^
+/Users/jason/Documents/OpenSource/amazon_search_example/app/views/form/index.haml:7: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47form47index46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :encoding=>nil, :ugly=>false, :escape_html=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("", 0, false);haml_temp =  form_tag('/'. :method => "post") do;
+_hamlout.push_text("#{haml_temp =  text_field_tag(:product_search)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);
+end;_hamlout.buffer << _hamlout.format_script_false_false_false_false_false_false_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));
+
+_hamlout.push_text("\n<div id='results'>\n  <h2>Product Results</h2>\n  <div id='results_list'></div>\n</div>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jason/Documents/OpenSource/amazon_search_example/app/views/form/index.haml:7:in `compile!'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/haml-2.2.24/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/haml-2.2.24/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `sass_old_process'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/haml-2.2.24/lib/sass/plugin/rails.rb:20:in `process'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/Users/jason/Developer/.rvm/gems/ruby-1.8.7-p248/gems/rails-2.3.8/lib/commands/server.rb:111
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jason/Documents/OpenSource/amazon_search_example/app/views/form/index.haml:1: syntax error, unexpected tSYMBEG
+...);haml_temp =  form_tag('/'. :method => "post") do;
+                              ^
+/Users/jason/Documents/OpenSource/amazon_search_example/app/views/form/index.haml:1: syntax error, unexpected ')', expecting kEND
+...rm_tag('/'. :method => "post") do;
+                              ^
+/Users/jason/Documents/OpenSource/amazon_search_example/app/views/form/index.haml:7: syntax error, unexpected kENSURE, expecting $end) on line #1 of app/views/form/index.haml:
+1: = form_tag('/'. :method => "post") do
+2: 	= text_field_tag(:product_search)
+3: 
+4: #results
+
+    app/views/form/index.haml:7:in `compile!'
+    haml (2.2.24) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.24) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.24) lib/sass/plugin/rails.rb:20:in `process'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:33:15) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:33:55) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:34:05) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:34:54) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:35:50) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:39:28) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 11:39:31) [GET]
+
+ActionController::RoutingError (No route matches "/remote/asa" with {:method=>:get}):
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 11:39:32) [GET]
+
+ActionController::RoutingError (No route matches "/remote/asa" with {:method=>:get}):
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 11:39:45) [GET]
+
+ActionController::RoutingError (No route matches "/remote/asa" with {:method=>:get}):
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:39:50) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 11:39:52) [GET]
+
+ActionController::RoutingError (No route matches "/remote/a" with {:method=>:get}):
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:40:09) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 11:40:11) [GET]
+
+ActionController::RoutingError (No route matches "/remote/a" with {:method=>:get}):
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 11:40:17) [GET]
+
+ActionController::RoutingError (No route matches "/remote/toy" with {:method=>:get}):
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 11:40:23) [GET]
+
+ActionController::RoutingError (No route matches "/remote/toy" with {:method=>:get}):
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jason/Developer/.rvm/rubies/ruby-1.8.7-p248/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:41:20) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 71ms (View: 70, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RemoteQueryController#index (for 127.0.0.1 at 2010-06-15 11:41:24) [GET]
+  Parameters: {"query"=>"toy"}
+Completed in 5867ms (View: 1, DB: 0) | 200 OK [http://localhost/remote/toy]
+
+
+Processing RemoteQueryController#index (for 127.0.0.1 at 2010-06-15 11:41:29) [GET]
+  Parameters: {"query"=>"toy"}
+Completed in 2044ms (View: 1, DB: 0) | 200 OK [http://localhost/remote/toy]
+
+
+Processing FormController#index (for 127.0.0.1 at 2010-06-15 11:42:13) [GET]
+Rendering template within layouts/application
+Rendering form/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RemoteQueryController#index (for 127.0.0.1 at 2010-06-15 11:42:16) [GET]
+  Parameters: {"query"=>"toy"}
+Completed in 2988ms (View: 1, DB: 0) | 200 OK [http://localhost/remote/toy]
+
+
+Processing RemoteQueryController#index (for 127.0.0.1 at 2010-06-15 11:42:24) [GET]
+  Parameters: {"query"=>"toy"}
+Completed in 2496ms (View: 1, DB: 0) | 200 OK [http://localhost/remote/toy]
