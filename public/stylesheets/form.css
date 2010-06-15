@@ -1,0 +1,13 @@
+/* Make Results somewhat pretty */
+#results {
+	width: 350px;
+}
+
+.result {
+  font-size: 10pt;
+  height: 90px; 
+}
+
+.result_img {
+  float: right; 
+}
