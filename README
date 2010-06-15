@@ -1,0 +1,23 @@
+== Amazon Search API Rails Example App
+
+A minimal AJAX enabled app for querying the Amazon Search API based on user
+input and then displaying the results
+
+== Installation
+To run demo:
+Just do a `mv config/.amazonrc_sample config/.amazonrc`,
+add your keys to .amazonrc,
+then `./script/server`
+
+== App Files
+config/.amazonrc_sample
+
+== Requirements
+Only Tested with Rails 2.3.8
+
+== Dependencies
+ruby-aaws (0.7.0) (gem)
+jQuery 1.3.2
+
+== TODO 
+Add Tests
