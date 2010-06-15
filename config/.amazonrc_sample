@@ -1,0 +1,6 @@
+# Add your information and rename this file to '.amazonrc'
+key_id = 'AMAZON API KEY'
+secret_key_id = 'SECRET KEY'
+cache = false
+encoding = 'iso-8859-15'
+
